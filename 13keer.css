@@ -38,8 +38,10 @@ hr{
     margin-left: 200px;
  }
 
- @media (max-width: 500px){
+ @media (max-width: 400px){
     .startkader-body{
+        height: 400px;
+        width: 400px;
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 0px;
