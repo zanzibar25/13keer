@@ -37,3 +37,11 @@ hr{
     border-radius: 5px;
     margin-left: 200px;
  }
+
+ @media (max-width: 500px){
+    .startkader-body{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+    }
+ }
