@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    background-image: url("kaarten.jpg");
+    background-image: no-repeat;
+ }
+
+ .border-veld{
+    margin-top:5%;
+ }
+.onderwerp-kader{
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.onderwerp2-kader{
+    margin-top: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr{
+    color: red;
+}
+
+ .startkader-body{
+   align-items: center;
+   justify-content: center;
+    height: 550px;
+    width: 600px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 0.9em;
+    background-color: #EAF1F5;
+    justify-content: flex-end;
+    border: 0.5px solid lightblue;
+    border-radius: 5px;
+    margin-left: 200px;
+ }

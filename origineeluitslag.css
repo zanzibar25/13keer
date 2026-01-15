@@ -1,0 +1,277 @@
+body{
+    width: 1100px;
+    height: 700px;
+    display: flex;
+    background-image: url("kaarten.jpg");
+    background-image: no-repeat;
+ }
+
+ .border-veld-uitslag{
+    margin-top:5%;
+ }
+
+ .kader-body-uitslag{
+    width: 950px;
+    height: 1190px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 0.9em;
+    background-color: #EAF1F5;
+    justify-content: flex-end;
+    border: 0.5px solid lightblue;
+    border-radius: 5px;
+    margin-left: 200px;
+ }
+
+ h2{
+   color: black;
+   margin-top: 10px;
+   margin-left: 300px;
+   opacity: 0.8;
+   font-family: cursive;
+ }
+
+::placeholder{
+   color: grey;
+   font-size: 1.4em;
+}
+
+ input{
+    background-color: white;
+    height: 2.3em;
+    width: 500px;
+ }
+
+ #fname1,#fname2,#fname3,#fname4{
+   color: black;
+   font-size: 1.1em
+ }
+
+ #fname{
+    font-size: 0.9em;
+    padding-left: 15px;
+    line-height: 0.5em;
+    border-bottom: 0.8px solid blue;
+    
+ }
+ 
+
+ a{
+  color: white;
+  background-color: #ee594f;;
+  border: 1px solid black;
+  padding: 9px;
+  border-radius: 3px;
+  text-decoration: none;
+ }
+
+ a:hover{
+  color: white;
+  background-color: black;
+ }
+ #submit-slagen{
+   background-color: lightblue;
+   font-size: 1em;
+ }
+
+ #submit-slagen:hover{
+   background-color: blanchedalmond;
+ }
+
+ #speler1Uitslag, #speler2Uitslag, #speler3Uitslag, #speler4Uitslag{
+  font-size: 1.1em;
+  padding: 18px;
+  color: black;
+ }
+
+ #uitslagSlagen1, #uitslagSlagen2, #uitslagSlagen3, #uitslagSlagen4{
+  padding: 15px 35px;
+ }
+
+
+ table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    padding-left: 45px;
+    font-size: 1em;
+  }
+ 
+  #blank{
+    width: 202px;
+    color: grey;
+    font-weight: lighter;
+  }
+
+  #nummerVal{
+    width: 20px;
+    margin-left: 20px;
+  }
+
+  #speler1Uitslag100{
+    width: 244px;
+    color: black;
+  }
+
+ #uitslag-waarde100{
+   width: 200px;
+  }
+  #speler2Uitslag200{
+    width: 239px;
+  }
+  
+ #uitslag-waarde200{
+   width: 190px;
+  }
+
+  #speler3Uitslag300{
+    width: 237px;
+  }
+  
+ #uitslag-waarde300{
+   width: 190px;
+  }
+
+  #speler4Uitslag400{
+    width: 243px;
+  }
+  
+ #uitslag-waarde400{
+   width: 200px;
+  }
+
+  #empty{
+    height: 25px;
+  }
+  
+  th{
+    margin-left: 30px;
+  }
+
+  #uitslagopmaak{
+    width:500px;
+    margin-left: 36px;
+    color: blue;
+  }
+
+  #nummering{
+    margin: 0px;
+    padding-left: 16px;
+    color: black;
+  }
+
+  #nummering1{
+    margin: 0px;
+    padding-left: 16px;
+    color: grey;
+  }
+
+  td{
+    padding-left: 45px;
+    width: 400px;
+     }
+
+
+
+  tr{
+    width: 300px;
+  }
+
+
+
+  #uitslagbutton{
+    color: blue;
+    font-size: 1em;
+    padding: 7px;
+    background-color: rgb(192,192,192,0.4);
+    border-radius: 6px;
+    border: 1px solid blue;
+  }
+
+  #uitslagbutton:hover{
+    background-color: rgb(94,194,194,1);
+    font-size: 1em;
+    padding: 7px;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid red;
+  }
+
+  #uitslag-totaal{
+    color: blue;
+    position: fixed;
+    width: 910px;
+    bottom: 0;
+  }
+
+  
+  #uitslag-totaal{
+    margin-left: 40px;
+  }
+
+  #eindtotalen{
+    margin-left: 72px;
+    padding-left: 92px;
+    padding-right: 95px;
+    
+    color: black;
+    background-color: #ee594f;
+  }
+
+  #blank2{
+    width: 182px;
+    color: cyan;
+    margin: 0px 15px;
+    padding: 0px 25px;
+  }
+
+  #uitslagtotaal1{
+    width: 262px;
+    color: black;
+    background-color: #ee594f;
+  }
+
+  #uitslagtotaal2{
+    width: 263px;
+    color: black;
+    background-color: #ee594f;
+
+  }
+
+  #uitslagtotaal3{
+    width: 263px;
+    color: black;
+    background-color: #ee594f;
+  }
+
+  #uitslagtotaal4{
+     width: 262px;
+     color: black;
+     background-color: #ee594f;
+  }
+ 
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header > div{
+    color: rgb(212, 89, 89);
+  }
+  
+ button{
+  font-size: 0.7em;
+  color: black;
+  background-color: #edc5c2;
+  border: 1px solid black;
+  padding: 9px;
+  border-radius: 3px;
+  text-decoration: none;
+ }
+
+ button:hover{
+  color: white;
+  background-color: #ee594f;
+  border: 1px solid cyan;
+ }

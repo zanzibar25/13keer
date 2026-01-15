@@ -1,0 +1,73 @@
+ body{
+    width: 1100px;
+    height: 700px;
+    display: flex;
+    background-image: url("kaarten.jpg");
+    background-image: no-repeat;
+ }
+
+ .border-veld{
+    margin-top:5%;
+ }
+
+ .kader-body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 550px;
+    padding: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 0.9em;
+    background-color: #EAF1F5;
+    justify-content: flex-end;
+    border: 0.5px solid lightblue;
+    border-radius: 5px;
+    margin-left: 500px;
+ }
+
+ h2{
+   color: black;
+   font-size: 2.0em;
+   margin-top: 50px;
+   margin-left: 75px;
+   opacity: 0.8;
+   font-family: cursive;
+ }
+
+::placeholder{
+   color: grey;
+}
+
+ input{
+    background-color: white;
+    height: 2.2em;
+    width: 500px;
+    padding-left: 150px;
+ }
+
+ #fname1,#fname2,#fname3,#fname4{
+   color: black;
+   font-size: 1em
+ }
+
+ #fname{
+    font-size: 0.9em;
+    padding-left: 15px;
+    line-height: 0.5em;
+    border-bottom: 0.8px solid blue;
+    
+ }
+ 
+ 
+ #submit{
+   background-color: lightblue;
+   font-size: 1em;
+   padding-left: 150px;
+   margin-left: 90px;
+ }
+
+ #submit:hover{
+   color: black;
+   background-color: darkgrey;
+ }
