@@ -43,18 +43,25 @@ h2 {
 }
 
 
+
+label{
+    padding: 25px 0px;
+}
+
 input {
     background-color: white;
     width: 100%;
     max-width: 350px;
     height: 2.3em;
     padding: 0.5em 1em;
+    margin-top: 5px;
     margin-bottom: 15px;
     border: none;
     border-bottom: 0.8px solid blue;
     box-sizing: border-box;
     font-size: 1em;
 }
+ 
 
 ::placeholder {
     color: grey;
