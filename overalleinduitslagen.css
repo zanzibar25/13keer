@@ -1,0 +1,125 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* ===== Body ===== */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("kaarten.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Header ===== */
+.header {
+    color: orangered;
+    margin-top: 35px;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* ===== Link / Button ===== */
+a {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 9px 14px;
+    background-color: rgba(238, 89, 79, 0.2);
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* ===== Start container ===== */
+.start-div {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Score rij ===== */
+.score-rij {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background-color: #ee594f;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+    max-width: 500px;
+}
+
+.score-rij span:last-child {
+    font-weight: bold;
+    color: white;
+}
+
+/* ===== Vuurwerk canvas ===== */
+#vuurwerkCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    background: transparent;
+}
+
+/* ===== Titel ===== */
+h2 {
+    font-size: 32px;
+    padding: 40px;
+    border: 2px solid red;
+    border-radius: 8px;
+    background: blue;
+    animation: mymove 3s infinite;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* ===== Animatie ===== */
+@keyframes mymove {
+    0%   { background-color: lightyellow; }
+    25%  { background-color: orange; }
+    50%  { background-color: red; }
+    75%  { background-color: orange; }
+    100% { background-color: lightyellow; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+        padding: 25px;
+    }
+
+    .score-rij {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

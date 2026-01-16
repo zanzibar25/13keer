@@ -1,0 +1,178 @@
+ /* ===== Body ===== */
+body {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("kaarten.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Kader ===== */
+.kader-body-uitslag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 950px;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #EAF1F5;
+    border: 0.5px solid lightblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+/* ===== Titel ===== */
+h2 {
+    color: black;
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+/* ===== Inputs ===== */
+input {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    height: 2.3em;
+    padding: 0.5em 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: grey;
+    font-size: 1em;
+}
+
+#fname1, #fname2, #fname3, #fname4,
+#speler1Uitslag, #speler2Uitslag, #speler3Uitslag, #speler4Uitslag {
+    font-size: 1em;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* ===== Knoppen & Links ===== */
+#submit-slagen, a, button, #uitslagbutton {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#submit-slagen {
+    background-color: lightblue;
+    border: none;
+}
+
+#submit-slagen:hover {
+    background-color: blanchedalmond;
+}
+
+a {
+    color: white;
+    background-color: #ee594f;
+    border: 1px solid black;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+button {
+    background-color: #edc5c2;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: #ee594f;
+    color: white;
+    border: 1px solid cyan;
+}
+
+#uitslagbutton {
+    color: blue;
+    background-color: rgba(192,192,192,0.4);
+    border: 1px solid blue;
+}
+
+#uitslagbutton:hover {
+    background-color: rgb(94,194,194);
+    color: white;
+    border: 1px solid red;
+}
+
+/* ===== Tabellen ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 1em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#blank, #blank2, #nummerVal,
+#speler1Uitslag100, #speler2Uitslag200, #speler3Uitslag300, #speler4Uitslag400,
+#uitslag-waarde100, #uitslag-waarde200, #uitslag-waarde300, #uitslag-waarde400,
+#uitslagtotaal1, #uitslagtotaal2, #uitslagtotaal3, #uitslagtotaal4 {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+    .kader-body-uitslag {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    input, #fname1, #fname2, #fname3, #fname4,
+    #speler1Uitslag, #speler2Uitslag, #speler3Uitslag, #speler4Uitslag {
+        max-width: 100%;
+        font-size: 0.9em;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    #submit-slagen, button, a, #uitslagbutton {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5em 0;
+    }
+}
