@@ -30,6 +30,7 @@ body {
     border-radius: 5px;
     box-sizing: border-box;
     margin: 20px auto;
+    
 }
 
 
@@ -48,8 +49,8 @@ input {
     width: 100%;
     max-width: 350px;
     height: 2.3em;
-    padding: 0.5em 1em;
-    margin-bottom: 15px;
+    padding: 0.4em 0.8em;
+    margin-bottom: 6px;
     border: none;
     border-bottom: 0.8px solid blue;
     box-sizing: border-box;
@@ -106,5 +107,33 @@ input {
 
     h2 {
         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 900px) {
+    .start-div {
+        max-width: 900px;
+    }
+
+    .score-rij {
+        max-width: 800px;
+        font-size: 24px;
+    }
+
+    h2 {
+        max-width: 900px;
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 900px) {
+    .kader-body {
+        max-width: 1000px; /* of 900 / 1100 */
+        padding: 50px;
+        font-size: 1.3em;
+    }
+
+    input {
+        max-width: 450px;
     }
 }
