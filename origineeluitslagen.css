@@ -1,4 +1,4 @@
- /* ===== Body ===== */
+
 body {
     width: 100%;
     min-height: 700px;
@@ -13,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== Kader ===== */
+
 .kader-body-uitslag {
     display: flex;
     flex-direction: column;
@@ -29,10 +29,9 @@ body {
     margin: 20px auto;
 }
 
-/* ===== Titel ===== */
+
 h2 {
     color: black;
-    font-family: cursive;
     font-size: 2em;
     text-align: center;
     margin: 10px 0;
@@ -174,5 +173,21 @@ th, td {
         width: 100%;
         max-width: 100%;
         padding: 0.5em 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .start-div {
+        max-width: 900px;
+    }
+
+    .score-rij {
+        max-width: 800px;
+        font-size: 24px;
+    }
+
+    h2 {
+        max-width: 900px;
+        font-size: 36px;
     }
 }
