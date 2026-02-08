@@ -61,7 +61,7 @@ form.addEventListener('submit', (event) => {
    if(hoeveelSlagenResultaat1Ls === aantalSlagengeboden1){
           ultiemResultaat1 = aantalSlagenGeboden1 + 10;
     }else{
-             ultiemResultaat1 = ultiemResultaat1 - hoeveelSlagenResultaat1Ls;                
+             ultiemResultaat1 = ultiemResultaat1 - aantalSlagenGeboden1;                
     }
         let ultiemResultaat101 = JSON.stringify(ultiemResultaat1);
         localStorage.setItem('ultiemResultaat1', ultiemResultaat101);
@@ -77,7 +77,7 @@ form.addEventListener('submit', (event) => {
    if(hoeveelSlagenResultaat2Ls === aantalSlagengeboden2){
     ultiemResultaat2 = aantalSlagenGeboden2 + 10;
         }else{
-        ultiemResultaat2 = ultiemResultaat2 - hoeveelSlagenResultaat2Ls;
+        ultiemResultaat2 = ultiemResultaat2 - aantalSlagenGeboden2;
     }
 
         let ultiemResultaat201 = JSON.stringify(ultiemResultaat2);
@@ -90,7 +90,7 @@ form.addEventListener('submit', (event) => {
    if(hoeveelSlagenResultaat3Ls === aantalSlagengeboden3){
     ultiemResultaat3 = aantalSlagenGeboden3 + 10;
         }else{
-        ultiemResultaat3 = ultiemResultaat3 - hoeveelSlagenResultaat3Ls;
+        ultiemResultaat3 = ultiemResultaat3 - aantalSlagenGeboden3;
 }
         let ultiemResultaat301 = JSON.stringify(ultiemResultaat3);
         localStorage.setItem('ultiemResultaat3', ultiemResultaat301);
@@ -102,7 +102,7 @@ form.addEventListener('submit', (event) => {
    if(hoeveelSlagenResultaat4Ls === aantalSlagengeboden4){
     ultiemResultaat4 = aantalSlagenGeboden4 + 10;
         }else{
-        ultiemResultaat4 = ultiemResultaat4 - hoeveelSlagenResultaat4Ls;
+        ultiemResultaat4 = ultiemResultaat4 - aantalSlagenGeboden4;
 }
 
     let ultiemResultaat401 = JSON.stringify(ultiemResultaat4);
