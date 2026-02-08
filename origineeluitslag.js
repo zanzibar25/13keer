@@ -21,13 +21,10 @@ const ultiemResultaat4 = Number(localStorage.getItem('ultiemResultaat4')) || 0;
 
 let beurtNummer = Number(localStorage.getItem('nummerValue')) || 1;
 let beurtNummerB = Number(localStorage.getItem('nummerValueB')) || 1;
+let eindTotalenWeergave = document.getElementById('eindtotalen');
 
 console.log ('beurtnummer : ' +beurtNummer);
 console.log ('beurtnummerB : ' +beurtNummerB);
-
-function resetbutton(){
-  window.location = start.html;
-}
 
  
 let totalInputResult =
@@ -52,8 +49,10 @@ const tableBody = document.getElementById('tableRow');
 
 tableBody.innerHTML = ""; // tabel leegmaken
 
+let rondeNummer;
+
 totalInputResult.forEach((ronde, index) => {
-  let rondeNummer;
+   
 
   // Bereken "positie in de ping-pong" inclusief dubbele 13
   if (index < maxRonde) {
@@ -78,6 +77,7 @@ totalInputResult.forEach((ronde, index) => {
   `;
 });
 
+eindTotalenWeergave.innerHTML = `${rondeNummer} `;
 //
 let eindTotaalSpeler10 = Number(localStorage.getItem('eindTotaalSpeler1')) || 0;
 let eindTotaalSpeler20 = Number(localStorage.getItem('eindTotaalSpeler2')) || 0;

@@ -275,3 +275,10 @@ body{
   background-color: #ee594f;
   border: 1px solid cyan;
  }
+
+ #eurobird{
+  width: 2em;
+  height: auto;
+  margin-top: 0;
+  margin-left: 60%;
+ }
