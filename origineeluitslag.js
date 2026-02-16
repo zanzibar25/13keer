@@ -26,11 +26,11 @@ let eindTotalenWeergave = document.getElementById('eindtotalen');
 console.log ('beurtnummer : ' +beurtNummer);
 console.log ('beurtnummerB : ' +beurtNummerB);
 
- 
+   
 let totalInputResult =
   JSON.parse(localStorage.getItem('totalInputResult')) || [];
 
-// nieuwe ronde toevoegen
+
 totalInputResult.push([
   ultiemResultaat1,
   ultiemResultaat2,
@@ -47,22 +47,22 @@ localStorage.setItem(
 const maxRonde = 13;
 const tableBody = document.getElementById('tableRow');
 
-tableBody.innerHTML = ""; // tabel leegmaken
+tableBody.innerHTML = ""; 
 
 let rondeNummer;
 
 totalInputResult.forEach((ronde, index) => {
    
 
-  // Bereken "positie in de ping-pong" inclusief dubbele 13
+  
   if (index < maxRonde) {
-    // 1 t/m 13
+    
     rondeNummer = index + 1;
   } else if (index === maxRonde) {
-    // tweede keer 13
+    
     rondeNummer = maxRonde;
   } else {
-    // terugtellen: 12 → 1
+    
     rondeNummer = maxRonde - (index - maxRonde);
   }
 
@@ -124,4 +124,4 @@ spelers.forEach(speler => {
     speler.element.style.color = "";
   }
 });
- 
+   
