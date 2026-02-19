@@ -79,4 +79,17 @@ body{
         background-image: url("kaarten.jpg");
         background-image: no-repeat;
      }
+     .kader-body{
+         width: 40%;
+         height: 100%;
+         padding: 15px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 1.2em;
+         line-height: 0.9em;
+         background-color: #EAF1F5;
+         justify-content: center;
+         border: 0.5px solid lightblue;
+         border-radius: 5px;
+         margin-left: 0%;
+     }
    }
