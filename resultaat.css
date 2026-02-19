@@ -92,4 +92,7 @@ body{
          border-radius: 5px;
          margin-left: 0%;
      }
+     body{
+      overflow-x: hidden;
+     }
    }
