@@ -71,32 +71,4 @@ body{
    background-color: darkgrey;
  }
 
-
  
- @media only screen and (max-width: 600px) {
-    body{
-      width: 100%;
-      height: auto;
-      display: flex;
-      background-image: url("kaarten.jpg");
-      background-image: no-repeat;
-    
-    } 
-
-
-    .kader-body{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: auto;
-      margin-left: 5%;
-      padding: 5%;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2em;
-      line-height: 0.9em;
-      background-color: #EAF1F5;
-      border: 0.5px solid lightblue;
-      border-radius: 5px;
-    } 
-   }
