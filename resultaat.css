@@ -53,7 +53,7 @@ body{
 
  #fname{
     font-size: 0.9em;
-    padding-left: 5px;
+    padding-left: 15px;
     line-height: 0.5em;
     border-bottom: 0.8px solid blue;
     
@@ -63,7 +63,7 @@ body{
  #submit-resultaat{
    background-color: lightblue;
    font-size: 1em;
-   padding: 0px 10px;
+   padding: 0px 220px;
  }
 
  #submit-resultaat:hover{
@@ -71,31 +71,29 @@ body{
    background-color: darkgrey;
  }
 
- @media (max-width: 400px){
-   body{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    background-image: url("kaarten.jpg");
-    background-image: no-repeat;
- };
+
  
+ @media only screen and (max-width: 600px) {
+    body{
+      width: 50%;
+      height: auto;
+      background-image: none;
+    } 
+    .kader-body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2em;
+      line-height: 0.9em;
+      background-color: #EAF1F5;
+      border: 0.5px solid lightblue;
+      border-radius: 5px;
+    }
+   }
 
- .kader-body{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    height: 400px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    line-height: 0.9em;
-    background-color: #EAF1F5;
-    justify-content: flex-end;
-    border: 0.5px solid lightblue;
-    border-radius: 5px;
-    margin-left: 5px;
- }
-
-
- }
+ 
