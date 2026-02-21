@@ -1,0 +1,128 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("kaarten.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-veld {
+    margin-top: 5%;
+   
+}
+
+.kader-body {
+    width: 650px;
+    height: 90%;
+    max-width: 95%;
+    padding: 0px 35px;
+    background-color: rgba(234, 241, 245, 0.85);  
+    border: 0.5px solid lightblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.9em;
+    color: black;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 30px;
+}
+
+
+.label-text {
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+}
+
+ 
+input {
+    width: 100%;
+    height: 2.3em;
+    padding-left: 5px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid blue;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+::placeholder{
+   color: grey;
+   padding-left: 15%;
+   font-size: 1.3em;
+}
+
+#fname {
+    padding-left: 5px;
+    font-size: 0.9em;
+    border-bottom: 0.8px solid blue;
+}
+
+
+#submit-slagen {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+#submit-slagen:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+
+form {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .kader-body {
+        width: 100%;
+        height: 100%;
+        padding: 20px 75px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        height: 2.2em;
+        font-size: 0.9em;
+        padding-left: 0px;
+    }
+
+    #submit-slagen {
+        padding: 10px;
+        width: 100%;
+    }
+}
