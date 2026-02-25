@@ -3,6 +3,20 @@
  const voorNaamDerdeSpeler = localStorage.getItem('NaamSpeler3localStorage');
  const voorNaamVierdeSpeler = localStorage.getItem('NaamSpeler4localStorage');
  const form = document.querySelector("form");
+let rondenummers = document.getElementById('ronde');
+
+let rondeNummer = Number(localStorage.getItem('rondeNummerLS')) || 0;
+
+rondeNummer = rondeNummer + 1;
+let tekst = 'het is ronde nummer : ' + rondeNummer + ' , anita ! &#128540;';
+ 
+localStorage.setItem('rondeNummerLS', rondeNummer);
+
+console.log('rondeNummer is : ' + rondeNummer);
+
+rondenummers.innerHTML = tekst;
+ 
+
 
 document.getElementById('voorNaamLocalStorage1').textContent = voorNaamEersteSpeler;
 document.getElementById('voorNaamLocalStorage2').textContent = voorNaamTweedeSpeler;
@@ -20,7 +34,11 @@ if (convertNumber > 13){
         uiteindelijkNummer = uiteindelijkNummer - 1;
         console.log ('het uiteindelijk nummer is : ' + uiteindelijkNummer);
 }
-localStorage.setItem('nummerValue', convertNumber);
+localStorage.setItem('nummerValue', convertNumber);  // dit geeft problemen
+console.log('nummerValue is :' + ' ' + typeof nummerValue + ': ' + nummerValue);
+console.log('convertNumber is :' + ' ' + typeof convertNumber + ': ' + convertNumber);
+console.log('numbeerAantalspelen is : ' +  '' + typeof numberAantalspelen + ': ' + numberAantalspelen);
+console.log(localStorage);
 }else{
     window.location = "overalleinduitslag.html"
 };

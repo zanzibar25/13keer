@@ -13,10 +13,6 @@ html, body {
     align-items: center;
 } 
 
-.ronde{
-    color: red;
-    font-size: 1.2em;;
-}
 .border-veld {
     margin-top: 5%;
    
@@ -24,7 +20,7 @@ html, body {
 
 .kader-body {
     width: 100%;
-    max-width: 500px;   /* desktop limiet */
+    max-width: 500px;   
     padding: 20px;
     background-color: rgba(234, 241, 245, 0.85);  
     border: 0.5px solid lightblue;
@@ -43,7 +39,7 @@ h2 {
     opacity: 0.8;
     text-align: center;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 30px;
 }
 
@@ -121,7 +117,7 @@ form {
     input {        
         height: 2em;
         font-size: 0.9em;
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     #submit-slagen {
