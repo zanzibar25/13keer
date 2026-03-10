@@ -8,7 +8,7 @@ let rondenummers = document.getElementById('ronde');
 let rondeNummer = Number(localStorage.getItem('rondeNummerLS')) || 0;
 
 rondeNummer = rondeNummer + 1;
-let tekst = 'het is ronde nummer : ' + rondeNummer + ' , anita ! &#128540;';
+let tekst = 'het is ronde nummer : ' + rondeNummer;
  
 localStorage.setItem('rondeNummerLS', rondeNummer);
 
