@@ -21,15 +21,29 @@ body{
     margin-left: 25px;
 }
 a{
-    color: black;
+     
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.1em;
     text-decoration: none;
     border: 2px solid black;
     border-radius: 5px;
     padding: 9px;
     background-color: rgba(238, 89, 79, 0.2);
     margin-top: 25px;
+    color: black;
+}
+
+button {
+    
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: rgba(238, 89, 79, 0.2);
+    margin-top: 25px;
+    color: black;
 }
 
 .start-div{
@@ -86,4 +100,12 @@ h2{
   75% {background-color: orange;}
   100% {background-color: lightyellow;}
   
+} 
+ 
+ 
+@media print {
+    body{
+        zoom: 70%;
+    }
 }
+ 

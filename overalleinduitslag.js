@@ -124,3 +124,38 @@ function startVuurwerk() {
   geluid.play();
 }
 
+function printPagina() {
+ 
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = '0';
+
+    iframe.src = "origineeluitslag.html";  
+
+    document.body.appendChild(iframe);
+
+    iframe.onload = function () {
+        const doc = iframe.contentWindow.document;
+
+        const style = doc.createElement("style");
+        style.innerHTML = `
+            @media print {
+                body {
+                    transform: scale(1.0);
+                    transform-origin: top left;
+                    width: 152%;
+                }
+            }
+        `;
+        doc.head.appendChild(style);
+
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+    };
+}
+ 
+window.open("origineeluitslag.html").print();
