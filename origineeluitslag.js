@@ -30,14 +30,23 @@ console.log ('beurtnummerB : ' +beurtNummerB);
 let totalInputResult =
   JSON.parse(localStorage.getItem('totalInputResult')) || [];
 
+ 
 
-totalInputResult.push([
-  ultiemResultaat1,
-  ultiemResultaat2,
-  ultiemResultaat3,
-  ultiemResultaat4
-]);
 
+if (totalInputResult.length < 26) {  
+  totalInputResult.push([
+    ultiemResultaat1,
+    ultiemResultaat2,
+    ultiemResultaat3,
+    ultiemResultaat4
+  ]);
+}else {
+  setTimeout(function() {
+  window.location.href = "overalleinduitslag.html";
+}, 10000);
+}
+
+ 
 
 localStorage.setItem(
   'totalInputResult',
@@ -66,6 +75,8 @@ totalInputResult.forEach((ronde, index) => {
     rondeNummer = maxRonde - (index - maxRonde);
   }
 
+  localStorage.setItem('rondeNummerLS', rondeNummer);
+
   tableBody.innerHTML += `
     <tr>
       <td>${rondeNummer}</td>
@@ -76,6 +87,7 @@ totalInputResult.forEach((ronde, index) => {
     </tr>
   `;
 });
+ 
 
 eindTotalenWeergave.innerHTML = `${rondeNummer} `;
 //
@@ -125,3 +137,9 @@ spelers.forEach(speler => {
   }
 });
    
+
+if ( beurtNummer === 26 ) {
+  setTimeout(function() {
+  window.location.href = "overalleinduitslag.html";
+}, 3000);}
+ 
