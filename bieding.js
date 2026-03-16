@@ -4,17 +4,27 @@
  const voorNaamVierdeSpeler = localStorage.getItem('NaamSpeler4localStorage');
  const form = document.querySelector("form");
 let rondenummers = document.getElementById('ronde');
-
-let rondeNummer = Number(localStorage.getItem('rondeNummerLS')) || 0;
-
-rondeNummer = rondeNummer + 1;
-let tekst = 'het is ronde nummer : ' + rondeNummer;
+let rondeNummerShow2 = 13;;
+let numberAantalspelen = localStorage.getItem('nummerValue');
+let rondeNummer = Number(localStorage.getItem('rondeNummerLS2')) || 0;
  
-localStorage.setItem('rondeNummerLS', rondeNummer);
 
-console.log('rondeNummer is : ' + rondeNummer);
+if (numberAantalspelen < 14 ){
+    if (rondeNummer < 13){
+    rondeNummer = rondeNummer + 1;
+    }else if (rondeNummer === 13){
+        rondeNummer === 13;
+    }
+}else if (numberAantalspelen >= 14 && numberAantalspelen < 27){
+    rondeNummer = rondeNummer - 1;
+}
 
+
+console.log('rondeNummer is : ' + rondeNummer); 
+let tekst = 'het is ronde nummer : ' + rondeNummer ;
 rondenummers.innerHTML = tekst;
+ 
+
  
 
 
@@ -24,7 +34,7 @@ document.getElementById('voorNaamLocalStorage3').textContent = voorNaamDerdeSpel
 document.getElementById('voorNaamLocalStorage4').textContent = voorNaamVierdeSpeler;
 
 
-let numberAantalspelen = localStorage.getItem('nummerValue');
+ 
 let convertNumber = parseInt(numberAantalspelen);
 convertNumber = convertNumber +1;
 nummerValue = convertNumber;
