@@ -7,7 +7,6 @@ let allScoreTotaldbase = [0];
 let allScoreTotaldbasenew = [0];  //
 let inputArrayLS = [0];
 
-localStorage.clear();
 localStorage.setItem('eindTotaalSpeler1', JSON.stringify(0));
 localStorage.setItem('eindTotaalSpeler2', JSON.stringify(0));
 localStorage.setItem('eindTotaalSpeler3', JSON.stringify(0));
