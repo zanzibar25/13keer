@@ -90,6 +90,8 @@ totalInputResult.forEach((ronde, index) => {
  
 
 eindTotalenWeergave.innerHTML = `${rondeNummer} `;
+localStorage.setItem('rondeNummerLS2', rondeNummer);
+console.log('rondeNummer : ' + rondeNummer);
 //
 let eindTotaalSpeler10 = Number(localStorage.getItem('eindTotaalSpeler1')) || 0;
 let eindTotaalSpeler20 = Number(localStorage.getItem('eindTotaalSpeler2')) || 0;
