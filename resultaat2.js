@@ -3,10 +3,27 @@ const voorNaamTweedeSpeler = localStorage.getItem('NaamSpeler2localStorage');
 const voorNaamDerdeSpeler = localStorage.getItem('NaamSpeler3localStorage');
 const voorNaamVierdeSpeler = localStorage.getItem('NaamSpeler4localStorage');
 
+
+
+
 document.getElementById('voorNaamLocalStorage1').textContent = voorNaamEersteSpeler;
 document.getElementById('voorNaamLocalStorage2').textContent = voorNaamTweedeSpeler;
 document.getElementById('voorNaamLocalStorage3').textContent = voorNaamDerdeSpeler;
 document.getElementById('voorNaamLocalStorage4').textContent = voorNaamVierdeSpeler;
+
+const hoeveelslagen1 = localStorage.getItem('hoeveelslagen1');
+const hoeveelslagen2 = localStorage.getItem('hoeveelslagen2');
+const hoeveelslagen3 = localStorage.getItem('hoeveelslagen3');
+const hoeveelslagen4 = localStorage.getItem('hoeveelslagen4');
+
+
+document.getElementById('aantal1').textContent = "hoeveel slagen heb je gezegd ? " + hoeveelslagen1;
+document.getElementById('aantal2').textContent = "hoeveel slagen heb je gezegd ? " + hoeveelslagen2;
+document.getElementById('aantal3').textContent = "hoeveel slagen heb je gezegd ? " + hoeveelslagen3;
+document.getElementById('aantal4').textContent = "hoeveel slagen heb je gezegd? " + hoeveelslagen4;
+
+  
+ 
 
 const formul = document.querySelector("form");
 
